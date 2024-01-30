@@ -325,7 +325,7 @@ func AuthRequired() gin.HandlerFunc {
 // @Tags 		quest
 // @Accept 		json
 // @Produce 	json
-// @Param 		fence	 body 		GolbatFence		true 	"Fence"
+// @Param 		fence	 body 		geojson.Feature		true 	"Fence"
 // @Success 	200 	 {object} 	Response 		"Success"
 // @Router 		/api/clear-quests [post]
 func ClearQuests(c *gin.Context) {
@@ -455,7 +455,7 @@ func PokemonSearch(c *gin.Context) {
 // @Tags 		quest
 // @Accept 		json
 // @Produce 	json
-// @Param 		fence	 	body 		GolbatFence		true 	"Fence"
+// @Param 		fence	 	body 		geojson.Feature		true 	"Fence"
 // @Success 	200 		{array} 	db.QuestStatus 	"ok"
 // @Router 		/api/quest-status [post]
 func GetQuestStatus(c *gin.Context) {

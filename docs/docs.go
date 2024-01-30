@@ -35,7 +35,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/main.GolbatFence"
+                            "$ref": "#/definitions/geojson.Feature"
                         }
                     }
                 ],
@@ -106,7 +106,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/main.GolbatFence"
+                            "$ref": "#/definitions/geojson.Feature"
                         }
                     }
                 ],
@@ -375,6 +375,29 @@ const docTemplate = `{
                 }
             }
         },
+        "geojson.Feature": {
+            "type": "object",
+            "properties": {
+                "bbox": {
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    }
+                },
+                "geometry": {},
+                "id": {},
+                "properties": {
+                    "$ref": "#/definitions/geojson.Properties"
+                },
+                "type": {
+                    "type": "string"
+                }
+            }
+        },
+        "geojson.Properties": {
+            "type": "object",
+            "additionalProperties": true
+        },
         "gohbem.PokemonEntry": {
             "type": "object",
             "properties": {
@@ -407,30 +430,6 @@ const docTemplate = `{
                 },
                 "value": {
                     "type": "number"
-                }
-            }
-        },
-        "main.ApiLocation": {
-            "type": "object",
-            "properties": {
-                "lat": {
-                    "type": "number",
-                    "example": 40.73061
-                },
-                "lon": {
-                    "type": "number",
-                    "example": -73.935242
-                }
-            }
-        },
-        "main.GolbatFence": {
-            "type": "object",
-            "properties": {
-                "fence": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/main.ApiLocation"
-                    }
                 }
             }
         },
