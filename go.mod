@@ -5,13 +5,13 @@ go 1.21
 require (
 	github.com/Depado/ginprom v1.8.0
 	github.com/UnownHash/gohbem v0.11.3
-	github.com/getsentry/sentry-go v0.25.0
+	github.com/getsentry/sentry-go v0.26.0
 	github.com/gin-gonic/gin v1.9.1
 	github.com/go-sql-driver/mysql v1.7.1
 	github.com/goccy/go-json v0.10.2
 	github.com/golang-migrate/migrate/v4 v4.17.0
 	github.com/golang/geo v0.0.0-20230421003525-6adc56603217
-	github.com/grafana/pyroscope-go v1.0.4
+	github.com/grafana/pyroscope-go v1.1.0
 	github.com/jellydator/ttlcache/v3 v3.1.1
 	github.com/jmoiron/sqlx v1.3.5
 	github.com/knadh/koanf/maps v0.1.1
@@ -20,11 +20,11 @@ require (
 	github.com/knadh/koanf/providers/structs v0.1.0
 	github.com/knadh/koanf/v2 v2.0.1
 	github.com/nmvalera/striped-mutex v0.1.0
-	github.com/paulmach/orb v0.10.0
+	github.com/paulmach/orb v0.11.1
 	github.com/prometheus/client_golang v1.18.0
 	github.com/puzpuzpuz/xsync/v2 v2.5.1
-	github.com/ringsaturn/tzf v0.14.1
-	github.com/ringsaturn/tzf-rel v0.0.2023-d
+	github.com/ringsaturn/tzf v0.14.2
+	github.com/ringsaturn/tzf-rel v0.0.2023-d1
 	github.com/sirupsen/logrus v1.9.3
 	github.com/swaggo/files v1.0.1
 	github.com/swaggo/gin-swagger v1.6.0
